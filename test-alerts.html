@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>
+
+    Alerts test &middot; Prevent
+
+</title>
+
+<link href="http://dignio.github.io/prevent2-proto/css/styles.css" rel="stylesheet">
+
+<script src="http://dignio.github.io/prevent2-proto/bower_components/modernizr/modernizr.js"></script>
+
+  </head>
+  <body class="front-page">
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+        <nav class="top-bar top-bar-sub">
+  <ul class="title-area">
+    <li class="name">
+      <h1>
+        <a href="user.html">
+          <i class="glyphicon glyphicon-user"></i>
+          <!-- <span class="">Gunnhild</span>--> A Patient
+          <span class="top-bar--info">89895171250</span>
+        </a>
+      </h1>
+    </li>
+  </ul>
+
+  <section class="top-bar-section show-for-medium-up">
+      <ul class="right">
+        <li class="divider"></li>
+        <li class="">
+          <a href="#" data-toggle="modal" data-target="#myModal">New note</a>
+        </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</nav>
+
+
+
+        <div class="row">
+  <div class="large-7 columns">
+    <section class="module module-bordered">
+      <header class="module--header show-for-medium-up">
+        <h2>Alarms</h2>
+      </header>
+      <div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>
+          Alarms
+        </th>
+        <th>
+          Notes
+        </th>
+        <th>
+          Assigned
+        </th>
+        <th>
+          Date
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="#"></a>
+          <div>
+            <i class="alert-red glyphicon glyphicon-record"></i>
+          </div>
+        </td>
+        <td>
+          <a href="#"><strong>Spirometry FEV1:</strong> 3.42 L</a>
+        </td>
+        <td>
+          <a href="#" class="" role="button"><span class="glyphicon glyphicon-pencil">&nbsp;</span> Add note</a>
+        </td>
+        <td>
+          John Smith
+          <br>
+          11.11.2013 16:17
+        </td>
+        <td>
+          <a href="#">29.10.2013 08:47</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class="alert-red glyphicon glyphicon-record"></i>
+        </td>
+        <td>
+          <a href="#">
+            <strong>Spirometry PEF:</strong> 676.2 L/min</a>
+        </td>
+        <td>
+          <a href="#" class="" role="button"><span class="glyphicon glyphicon-pencil">&nbsp;</span> Add note</a>
+        </td>
+        <td>
+          Jens Espeland
+          <br>
+          11.11.2013 16:51
+        </td>
+        <td>
+          <a href="#">29.10.2013 08:47</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class="alert-green glyphicon glyphicon-record"></i>
+        </td>
+        <td>
+          <a href="#"><strong>Puls:</strong> 75.8 bpm</a>
+        </td>
+        <td>
+          <a href="#" class="" role="button"><span class="glyphicon glyphicon-eye-open">&nbsp;</span> View note</a>
+        </td>
+        <td>
+          <a href="#"></a><br>
+        </td>
+        <td>
+          <a href="#">11.11.2013 11:28</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class="alert-red glyphicon glyphicon-record"></i>
+        </td>
+        <td>
+          <a href="#"><strong>Fristen passert:</strong> Blodsukker</a>
+        </td>
+        <td>
+          <a href="#" class="" role="button"><span class="glyphicon glyphicon-eye-open">&nbsp;</span> View note</a>
+        </td>
+        <td>
+
+        </td>
+        <td>
+          <a href="#7">11.11.2013 18:00</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class="alert-yellow glyphicon glyphicon-record"></i>
+        </td>
+        <td>
+          <a href="#"><strong>Fristen passert:</strong> Blodtrykk</a>
+        </td>
+        <td>
+          <a href="#" class="" role="button"><span class="glyphicon glyphicon-eye-open">&nbsp;</span> View note</a>
+        </td>
+        <td>
+
+        </td>
+        <td>
+          <a href="#">11.11.2013 18:00</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    </section>
+  </div>
+</div>
+
+
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Note for: A Patient</h4>
+      </div>
+      <div class="modal-body">
+        <select>
+          <option value="husker">Select</option>
+          <option value="alarm">Alarm</option>
+          <option value="call">Call</option>
+          <option value="maintenance">Other</option>
+        </select>
+        <textarea class="form-control" rows="3"></textarea>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Angre</button> -->
+        <button type="button" class="btn btn-default">Save</button>
+        <button type="button" class="btn btn-primary">Save for all</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+        <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://dignio.github.io/prevent2-proto/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="http://dignio.github.io/prevent2-proto/bower_components/fastclick/lib/fastclick.js"></script>
+<script src="http://dignio.github.io/prevent2-proto/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+
+<!-- Foundation 5 scripts -->
+
+<script src="http://dignio.github.io/prevent2-proto/bower_components/foundation/js/foundation/foundation.js"></script>
+<script src="http://dignio.github.io/prevent2-proto/bower_components/foundation/js/foundation/foundation.tooltip.js"></script>
+<script src="http://dignio.github.io/prevent2-proto/bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
+<script src="http://dignio.github.io/prevent2-proto/bower_components/foundation/js/foundation/foundation.joyride.js"></script>
+<script src="http://dignio.github.io/prevent2-proto/bower_components/foundation/js/foundation/foundation.tab.js"></script>
+
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+});
+</script>
+
+<script>
+  $(document).foundation();
+  $(document).foundation('joyride', 'start');
+</script>
+
+
+      </div>
+    </div>
+  </body>
+</html>
