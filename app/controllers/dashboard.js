@@ -69,8 +69,25 @@ app.controller('dashboardCtrl', [
 
       modalInstance.result.then(function (note) {
         // Close alert
-        if (note) {
+        if (note.title && note.body) {
           Alerts.close(alert.aid, note);
+        }
+      });
+    };
+
+
+    /**
+     * View note of alert
+     * @param  {Object} alert alert object
+     */
+    $scope.viewNote = function(alert) {
+      var modalInstance = $modal.open({
+        templateUrl: 'viewNoteModalTemplate.html',
+        controller: 'modalViewNoteCtrl',
+        resolve: {
+          alert: function () {
+            return alert;
+          }
         }
       });
     };

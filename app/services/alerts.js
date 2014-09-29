@@ -19,6 +19,8 @@ app.factory('Alerts', [
         // If alert have employee this is not high level anymore
         if (alert.employee) alert.levelNumber += 10;
 
+        if (alert.note_id) alert.levelNumber += 20;
+
         return alert;
       },
 
@@ -57,7 +59,15 @@ app.factory('Alerts', [
        */
       close: function(aid, note) {
         return $http.post(Global.APIHOST + 'alert/' + aid + '/close', { note: note });
-      }
+      },
 
+      /**
+       * Get note info
+       * @param  {String} noteId Note id
+       * @return {Object} Promise object with success data
+       */
+      getNote: function(noteId) {
+        return $http.get(Global.APIHOST + 'notes/' + noteId);
+      }
     }
 }]);
